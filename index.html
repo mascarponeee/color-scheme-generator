@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <title>Color Scheme Generator</title>
+    </head>
+    <body>
+        <main>
+            <h1>Color Scheme Generator</h1>
+            <form action="">
+                <input type="color" id="color-input">
+                <select id="mode-select">
+                    <option value="monochrome" selected>Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button type="submit" id="submit-btn">Get color scheme</button>
+            </form>
+            <div id="color-scheme-grid"></div>
+            <div class="copied-to-clipboard-notification">
+                <p>Copied!</p>
+            </div>
+        </main>
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
